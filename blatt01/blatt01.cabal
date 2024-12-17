@@ -4,11 +4,11 @@ cabal-version: 2.2
 --
 -- see: https://github.com/sol/hpack
 
-name:           vscode-haskell-config
+name:           blatt01
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/vscode-haskell-config#readme>
-homepage:       https://github.com/githubuser/vscode-haskell-config#readme
-bug-reports:    https://github.com/githubuser/vscode-haskell-config/issues
+description:    Please see the README on GitHub at <https://github.com/githubuser/blatt01#readme>
+homepage:       https://github.com/githubuser/blatt01#readme
+bug-reports:    https://github.com/githubuser/blatt01/issues
 author:         Author name here
 maintainer:     example@example.com
 copyright:      2024 Author name here
@@ -21,15 +21,15 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/vscode-haskell-config
+  location: https://github.com/githubuser/blatt01
 
 library
   exposed-modules:
       Lib
   other-modules:
-      Paths_vscode_haskell_config
+      Paths_blatt01
   autogen-modules:
-      Paths_vscode_haskell_config
+      Paths_blatt01
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
@@ -37,32 +37,31 @@ library
       base >=4.7 && <5
   default-language: Haskell2010
 
-executable vscode-haskell-config-exe
+executable blatt01-exe
   main-is: Main.hs
   other-modules:
-      Paths_vscode_haskell_config
+      Paths_blatt01
   autogen-modules:
-      Paths_vscode_haskell_config
+      Paths_blatt01
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , vscode-haskell-config
+    , blatt01
   default-language: Haskell2010
 
-test-suite vscode-haskell-config-test
+test-suite blatt01-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_vscode_haskell_config
+      Paths_blatt01
   autogen-modules:
-      Paths_vscode_haskell_config
+      Paths_blatt01
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      QuickCheck
-    , base >=4.7 && <5
-    , vscode-haskell-config
+      base >=4.7 && <5
+    , blatt01
   default-language: Haskell2010
